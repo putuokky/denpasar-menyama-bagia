@@ -6,6 +6,8 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
         <style>
             body {
                 font-family: "Roboto", sans-serif;
@@ -14,7 +16,7 @@
     </head>
     <body class="bg-white text-gray-800">
         <!-- Navbar -->
-        <nav class="bg-red-600 p-4">
+        <!-- <nav class="bg-red-600 p-4">
             <div class="container mx-auto flex justify-between items-center">
                 <a class="text-white text-2xl font-bold" href="#"> Denpasar Menyama Bagia </a>
                 <ul class="flex space-x-4">
@@ -29,7 +31,52 @@
                     </li>
                 </ul>
             </div>
+        </nav> -->
+
+        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+            <div class="container flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Menyama Bagia</span>
+                </a>
+                <button
+                    data-collapse-toggle="navbar-default"
+                    type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default"
+                    aria-expanded="false"
+                >
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+                    >
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                >Edukasi & Tips</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                >Login</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
         <!-- Hero Section -->
         <section class="bg-red-100 py-20 px-5">
             <div class="container mx-auto flex flex-col md:flex-row items-center">
@@ -53,7 +100,7 @@
                 <h2 class="text-3xl font-bold text-red-600">Edukasi dan Tips Denpasar Menyama Bagia</h2>
                 <p class="mt-4 text-lg text-gray-700">Jelajahi artikel - artikel psikologi terkait tumbuh kembang anak, kesehatan mental dan lainnya dari para psikolog</p>
                 <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white p-6 shadow-lg avatar">
+                    <div class="bg-white p-6 shadow-lg avatar rounded-lg">
                         <img
                             alt="Icon representing individual therapy"
                             class="mx-auto mb-4 w-30 h-30 rounded-lg"
@@ -62,7 +109,7 @@
                         <h3 class="text-xl font-bold text-red-600">Mood Swing: Penyebab, Gejala, dan Cara Mengatasinya</h3>
                         <p class="mt-2 text-gray-700">Anak kecanduan gadget? Pahami dampak negatifnya, kenali gejalanya, dan pelajari cara mengatasnya demi kesejahteraan emosional dan sosial mereka.</p>
                     </div>
-                    <div class="bg-white p-6 shadow-lg avatar">
+                    <div class="bg-white p-6 shadow-lg avatar rounded-lg">
                         <img
                             alt="Icon representing individual therapy"
                             class="mx-auto mb-4 w-30 h-30 rounded-lg"
@@ -71,7 +118,7 @@
                         <h3 class="text-xl font-bold text-red-600">Bahaya Self-Harm: Penyebab, Dampak, dan Cara Mengatasinya</h3>
                         <p class="mt-2 text-gray-700">Self-harm adalah tindakan melukai diri sendiri yang berdampak buruk bagi kesehatan mental dan fisik. Ketahui penyebab, bahaya, dan cara mengatasinya.</p>
                     </div>
-                    <div class="bg-white p-6 shadow-lg avatar">
+                    <div class="bg-white p-6 shadow-lg avatar rounded-lg">
                         <img
                             alt="Icon representing individual therapy"
                             class="mx-auto mb-4 w-30 h-30 rounded-lg"
@@ -120,11 +167,19 @@
         </section>
 
         <!-- Footer -->
-        <footer class="footer footer-center bg-red-600 text-base-content p-4">
+        <!-- <footer class="footer footer-center bg-red-600 text-base-content p-4">
             <aside class="text-center text-white">
                 <p>Copyright © 2025 - Denpasar Menyama Bagia</p>
                 <p>Tim SPBE Kominfos All rights reserved</p>
             </aside>
+        </footer> -->
+
+        <footer class="shadow dark:bg-gray-900">
+            <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">&copy; 2025 &mdash; <a href="https://flowbite.com/" class="hover:underline">Menyama Bagia</a>. All Rights Reserved.</span>
+            </div>
         </footer>
     </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </html>
