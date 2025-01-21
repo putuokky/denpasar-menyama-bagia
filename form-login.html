@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>
+        Login Form
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-red-100 flex items-center justify-center min-h-screen font-roboto">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h2 class="text-2xl font-bold mb-6 text-center text-red-600">
+            Login
+        </h2>
+        <form>
+            <div class="mb-4">
+                <label class="block text-gray-700 font-medium mb-2" for="nik">
+                    NIK
+                </label>
+                <input
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                    id="nik" name="nik" placeholder="Enter your NIK" type="text" />
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 font-medium mb-2" for="password">
+                    Password
+                </label>
+                <input
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                    id="password" name="password" placeholder="Enter your password" type="password" />
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 font-medium mb-2" for="captcha">
+                    Captcha
+                </label>
+                <div class="flex items-center justify-center border border-gray-300 p-2 rounded-lg">
+                    <input class="mr-2" id="captcha" name="captcha" type="checkbox" />
+                    <label class="flex items-center" for="captcha">
+                        <span>
+                            I'm not a robot
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="flex items-center justify-between mb-6">
+                <div class="flex items-center">
+                    <input class="h-4 w-4 text-red-600 focus:ring-red-500 border-gray-300 rounded" id="remember"
+                        name="remember" type="checkbox">
+                    <label class="ml-2 block text-gray-900" for="remember">
+                        Remember me
+                    </label>
+                    </input>
+                </div>
+                <a class="text-red-600 hover:underline" href="#">
+                    Forgot password?
+                </a>
+            </div>
+            <button
+                class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+                type="submit">
+                Login
+            </button>
+        </form>
+        <p class="mt-6 text-center text-gray-700">
+            Don't have an account?
+            <a class="text-red-600 hover:underline" href="#">
+                Sign up
+            </a>
+        </p>
+    </div>
+</body>
+
+</html>

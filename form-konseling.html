@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Form Konseling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-roboto">
+    <div class="container mx-auto p-4">
+        <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-6 text-center">Form Konseling</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="psikolog" class="block text-gray-700 font-medium mb-2">Pilih Psikolog</label>
+                    <select id="psikolog" class="w-full p-2 border border-gray-300 rounded-lg">
+                        <option value="">Pilih Psikolog</option>
+                        <option value="psikolog1">Psikolog 1</option>
+                        <option value="psikolog2">Psikolog 2</option>
+                        <option value="psikolog3">Psikolog 3</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="jadwal" class="block text-gray-700 font-medium mb-2">Pilih Jadwal Konseling</label>
+                    <input type="datetime-local" id="jadwal" class="w-full p-2 border border-gray-300 rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <label for="keluhan" class="block text-gray-700 font-medium mb-2">Sampaikan Keluhan atau Ketidaknyamanan</label>
+                    <textarea id="keluhan" rows="4" class="w-full p-2 border border-gray-300 rounded-lg"></textarea>
+                </div>
+              <div class="mb-4">
+                    <label for="seberapa-mengganggu" class="block text-gray-700 font-medium mb-2">Sejak Kapan Anda Rasakan Keluhan atau Ketidaknyamanan Anda?</label>
+                    <select id="seberapa-mengganggu" class="w-full p-2 border border-gray-300 rounded-lg">
+                        <option value="">Pilih Sejak Kapan Anda Merasakannya</option>
+                        <option value="sedikit">sejak 2 hari belakangan</option>
+                        <option value="sedang">sejak Seminggu Terakhir</option>
+                        <option value="parah">Sejak Sebulan Terakhir</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="seberapa-mengganggu" class="block text-gray-700 font-medium mb-2">Seberapa Mengganggu Hal Tersebut pada Aktivitas Sehari-hari Anda?</label>
+                    <select id="seberapa-mengganggu" class="w-full p-2 border border-gray-300 rounded-lg">
+                        <option value="">Pilih Tingkat Gangguan</option>
+                        <option value="sedikit">Sedikit</option>
+                        <option value="sedang">Sedang</option>
+                        <option value="parah">Parah</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Kirim</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
