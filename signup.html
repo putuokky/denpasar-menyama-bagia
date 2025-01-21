@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Sign Up Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-red-100 flex items-center justify-center min-h-screen font-roboto">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h2 class="text-2xl font-bold mb-6 text-center text-red-600">Sign Up</h2>
+        <form>
+            <div class="mb-4">
+                <label for="nik" class="block text-gray-700 font-medium mb-2">NIK</label>
+                <input type="text" id="nik" name="nik" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Enter your NIK">
+            </div>
+            <div class="mb-4">
+                <label for="nama" class="block text-gray-700 font-medium mb-2">Nama</label>
+                <input type="text" id="nama" name="nama" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Enter your name">
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 font-medium mb-2">Password</label>
+                <input type="password" id="password" name="password" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Enter your password">
+            </div>
+            <div class="mb-4">
+                <label for="confirm-password" class="block text-gray-700 font-medium mb-2">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Confirm your password">
+            </div>
+            <div class="mb-4">
+                <label for="phone" class="block text-gray-700 font-medium mb-2">Nomer Handphone</label>
+                <input type="text" id="phone" name="phone" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Enter your phone number">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-medium mb-2">Alamat Email</label>
+                <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Enter your email address">
+            </div>
+            <div class="mb-4">
+                <label for="kecamatan" class="block text-gray-700 font-medium mb-2">Kecamatan</label>
+                <select id="kecamatan" name="kecamatan" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                    <option value="" disabled selected>Select your kecamatan</option>
+                    <option value="kecamatan1">Denpasar Utara</option>
+                    <option value="kecamatan2">Denpasar Barat</option>
+                    <option value="kecamatan3">Denpasar Timur</option>
+                    <option value="kecamatan4">Denpasar Selatan</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="desa" class="block text-gray-700 font-medium mb-2">Desa / Kelurahan</label>
+                <select id="desa" name="desa" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                    <option value="" disabled selected>Select your desa/kelurahan</option>
+                    <option value="desa1">Desa 1</option>
+                    <option value="desa2">Desa 2</option>
+                    <option value="desa3">Desa 3</option>
+                    <option value="desa4">Desa 4</option>
+                </select>
+            </div>
+          <div class="mb-4">
+                <label for="desa" class="block text-gray-700 font-medium mb-2">Lingkungan / Dusun</label>
+                <select id="desa" name="desa" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                    <option value="" disabled selected>Select your Lingkungan / Dusun</option>
+                    <option value="desa1">Dusun 1</option>
+                    <option value="desa2">Dusun 2</option>
+                    <option value="desa3">Dusun 3</option>
+                    <option value="desa4">Dusun 4</option>
+                </select>
+            </div>
+            <div class="mb-6">
+                <label for="jalan" class="block text-gray-700 font-medium mb-2">Jalan</label>
+                <input type="text" id="jalan" name="jalan" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Enter your street address">
+            </div>
+            <button type="submit" class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500">Sign Up</button>
+        </form>
+        <p class="mt-6 text-center text-gray-700">Already have an account? <a href="form-login.html" class="text-red-600 hover:underline">Login</a></p>
+    </div>
+</body>
+</html>
