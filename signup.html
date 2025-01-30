@@ -26,7 +26,7 @@
                 <input type="password" id="confirm-password" name="confirm-password" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Confirm your password">
             </div>
             <div class="mb-4">
-                <label for="phone" class="block text-gray-700 font-medium mb-2">Nomer Handphone</label>
+                <label for="phone" class="block text-gray-700 font-medium mb-2">Nomor Handphone</label>
                 <input type="text" id="phone" name="phone" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Enter your phone number">
             </div>
             <div class="mb-4">
@@ -34,6 +34,22 @@
                 <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Enter your email address">
             </div>
             <div class="mb-4">
+                <label for="jk" class="block text-gray-700 font-medium mb-2">Jenis Kelamin</label>
+                <select id="jk" name="jk" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                    <option value="" disabled selected>Select Jenis Kelamin</option>
+                    <option value="laki-laki">Laki-Laki</option>
+                    <option value="perempuan">Perempuan</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="statuskawin" class="block text-gray-700 font-medium mb-2">Status Perkawinan</label>
+                <select id="statuskawin" name="statuskawin" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                    <option value="" disabled selected>Select Status Perkawinan</option>
+                    <option value="sudah">Sudah Kawin</option>
+                    <option value="belum">Belum Kawin</option>
+                </select>
+            </div>
+            <!-- <div class="mb-4">
                 <label for="kecamatan" class="block text-gray-700 font-medium mb-2">Kecamatan</label>
                 <select id="kecamatan" name="kecamatan" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
                     <option value="" disabled selected>Select your kecamatan</option>
@@ -42,8 +58,8 @@
                     <option value="kecamatan3">Denpasar Timur</option>
                     <option value="kecamatan4">Denpasar Selatan</option>
                 </select>
-            </div>
-            <div class="mb-4">
+            </div> -->
+            <!-- <div class="mb-4">
                 <label for="desa" class="block text-gray-700 font-medium mb-2">Desa / Kelurahan</label>
                 <select id="desa" name="desa" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
                     <option value="" disabled selected>Select your desa/kelurahan</option>
@@ -52,8 +68,8 @@
                     <option value="desa3">Desa 3</option>
                     <option value="desa4">Desa 4</option>
                 </select>
-            </div>
-          <div class="mb-4">
+            </div> -->
+          <!-- <div class="mb-4">
                 <label for="desa" class="block text-gray-700 font-medium mb-2">Lingkungan / Dusun</label>
                 <select id="desa" name="desa" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
                     <option value="" disabled selected>Select your Lingkungan / Dusun</option>
@@ -62,10 +78,10 @@
                     <option value="desa3">Dusun 3</option>
                     <option value="desa4">Dusun 4</option>
                 </select>
-            </div>
+            </div> -->
             <div class="mb-6">
                 <label for="jalan" class="block text-gray-700 font-medium mb-2">Jalan</label>
-                <input type="text" id="jalan" name="jalan" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Enter your street address">
+                <textarea name="jalan" id="" class="w-full px-3 py-2 pb-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Enter your street address"></textarea>
             </div>
             <button type="submit" class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500">Sign Up</button>
         </form>
